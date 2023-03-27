@@ -5,6 +5,7 @@ from links.serializers import LinkSerializer
 
 
 class ProjectSerializer(serializers.ModelSerializer):
+    """Сериализатор проектов"""
     skills = SkillSerializer(read_only=True, many=True)
     links = LinkSerializer(read_only=True, many=True)
 

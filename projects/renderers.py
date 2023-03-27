@@ -3,6 +3,7 @@ import json
 
 
 class ResponseJSONRenderer(JSONRenderer):
+    """Преобразование ответа"""
     charset = 'utf-8'
 
     def render(self, data, media_type=None, renderer_context=None):

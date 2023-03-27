@@ -34,6 +34,7 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractUser, PermissionsMixin):
+    """Модель кастомного пользователя"""
     username = models.CharField(db_index=True, max_length=255, unique=True)
     email = models.EmailField(db_index=True, unique=True)
     about = models.TextField(null=True, blank=True, verbose_name='О себе')

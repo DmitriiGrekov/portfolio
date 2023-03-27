@@ -5,6 +5,7 @@ from .models import User
 
 @admin.register(User)
 class AdvUserAdmin(admin.ModelAdmin):
+    """Пользователь"""
     list_display = ('id',
                     'email',
                     'username',

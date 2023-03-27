@@ -3,6 +3,7 @@ from users.models import User
 
 
 class Fact(models.Model):
+    """Факты"""
     text = models.CharField(max_length=300, verbose_name='Текст факта')
     user = models.ForeignKey(User,
                              on_delete=models.CASCADE,

@@ -3,6 +3,7 @@ from .models import Link
 
 
 class LinkSerializer(serializers.ModelSerializer):
+    """Сериализатор ссылок"""
 
     class Meta:
         model = Link

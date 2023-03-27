@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Skill(models.Model):
+    """Модель скиллов"""
     SKILL_TYPE = (
             ('languages', 'Языки'),
             ('databases', 'Базы данных'),
